@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>Sports Club</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      
+    
+      <style>
+         .ui-menu {
+            width: 200px;
+         }
+          footer{
+              text-align: center;
+              border: solid 2px;
+              background-color: black;
+              color: white;
+              
+          }
+          h1{
+              text-align: center;
+              border: solid 3px;
+              background-color: black;
+              color: white;
+            
+          }
+      </style>
+      
+
+      <script>
+         $(function() {
+            $( "#menu-2" ).menu({
+               icons: { submenu: "ui-icon-circle-triangle-e"},
+               position: { my: "right top", at: "right-10 top+5" }
+            });
+         });
+      </script>
+   </head>
+   
+   <body>
+       <h1>Go Sports Club</h1>
+      <p>A sports club or sporting club, sometimes athletics club or sports society or sports association, is a group of people formed for the purpose of playing sports.Sports clubs range from organisations whose members play together, unpaid, and may play other similar clubs on occasion, watched mostly by family and friends, to large commercial organisations with professional players which have teams which regularly compete against those of other clubs and attract sometimes very large crowds of paying spectators. Clubs may be dedicated to a single sport or to several. </p>
+       <p>We offer six types of sports in our sports club which is given in below menu.We also provide Specialization in Cricket to provide all the training in ODI,T20,Test.</p>
+       <h2>Sports Offer By Go Sports Club</h2><br>
+      <ul id = "menu-2">
+         <li><a href = "#">Football</a></li>
+         <li><a href = "#">Basketball</a></li>
+         <li><a href = "#">Cricket</a>
+            <ul>
+               <li><a href = "#">ODI</a></li>
+               <li><a href = "#">Test</a></li>
+               <li><a href = "#">T20</a></li>
+            </ul>
+         </li>
+         <li><a href = "#">Golf</a></li>
+         <li><a href = "#">Hockey</a></li>
+      </ul><br>
+   
+    <footer>Copyright &copy; Go Sports Club<br>
+                        <a href="mailto:go@sportsclub.com">go@sportsclub.com</a>
+                </footer>
+    </body>
+</html>
