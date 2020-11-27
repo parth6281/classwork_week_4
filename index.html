@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.22/datatables.min.js"></script>
+		<script src="script.js"></script>
+		<style >
+
+			h1, h2	{
+				text-align: center;
+			}
+
+			#scores_filter {
+				text-align: right;
+				margin-bottom: 10px;
+				font-size: 1.2em;
+			}
+
+			table	{
+				border: 1px solid #000000;
+				font-family: sans-serif;
+				border-collapse: collapse;
+			}
+
+			th	{
+				font-size:  1.5em;
+				border: 1px solid #000000;
+				padding: 15px;
+			}
+
+			td	{
+				padding: 10px;
+				border: 1px solid #000000;
+				text-align: center;
+			}
+
+			td	a	{
+				text-decoration: none;
+				color: #000000;
+			}
+
+			tr:nth-of-type(even)	{
+				background-color: #eaeaea;
+			}
+		</style>
+    </head>
+    <body>
+		<h1>Go Sports Club</h1>
+		<h2>Cricket Score table</h2>
+        <table id="scores" class="display">
+			<thead class="thead-dark">
+				<tr>
+					<th scope="col">Teams</th>
+					<th scope="col">Play</th>
+					<th scope="col">Won</th>
+					<th scope="col">Loss</th>
+					<th scope="col">Tie</th>
+					<th scope="col">NR</th>
+					<th scope="col">PTS</th>
+					<th scope="col">NRR</th>
+				</tr>
+			</thead>
+			<tbody>
+									<tr>
+						<td>
+															<a href="/topic/india-cricket-team" target="_blank">India</a>
+													</td>
+						<td>9</td>
+						<td>7</td>
+						<td>1</td>
+						<td>0</td>
+						<td>1</td>
+						<td>15</td>
+						<td>0.809</td>
+					</tr>
+									<tr>
+						<td>
+															<a href="/topic/australia-cricket-team" target="_blank">Australia</a>
+													</td>
+						<td>9</td>
+						<td>7</td>
+						<td>2</td>
+						<td>0</td>
+						<td>0</td>
+						<td>14</td>
+						<td>0.868</td>
+					</tr>
+									<tr>
+						<td>
+															<a href="/topic/england-cricket-team" target="_blank">England</a>
+													</td>
+						<td>9</td>
+						<td>6</td>
+						<td>3</td>
+						<td>0</td>
+						<td>0</td>
+						<td>12</td>
+						<td>1.152</td>
+					</tr>
+									<tr>
+						<td>
+															<a href="/topic/new-zealand-cricket-team" target="_blank">New Zealand</a>
+													</td>
+						<td>9</td>
+						<td>5</td>
+						<td>3</td>
+						<td>0</td>
+						<td>1</td>
+						<td>11</td>
+						<td>0.175</td>
+					</tr>
+									<tr>
+						<td>
+															<a href="/topic/pakistan-cricket-team" target="_blank">Pakistan</a>
+													</td>
+						<td>9</td>
+						<td>5</td>
+						<td>3</td>
+						<td>0</td>
+						<td>1</td>
+						<td>11</td>
+						<td>-0.43</td>
+					</tr>
+									<tr>
+						<td>
+															<a href="/topic/sri-lanka-cricket-team" target="_blank">Sri Lanka</a>
+													</td>
+						<td>9</td>
+						<td>3</td>
+						<td>4</td>
+						<td>0</td>
+						<td>2</td>
+						<td>8</td>
+						<td>-0.919</td>
+					</tr>
+									<tr>
+						<td>
+															<a href="/topic/south-africa-cricket-team" target="_blank">South Africa</a>
+													</td>
+						<td>9</td>
+						<td>3</td>
+						<td>5</td>
+						<td>0</td>
+						<td>1</td>
+						<td>7</td>
+						<td>-0.03</td>
+					</tr>
+									<tr>
+						<td>
+															<a href="/topic/bangladesh-cricket-team" target="_blank">Bangladesh</a>
+													</td>
+						<td>9</td>
+						<td>3</td>
+						<td>5</td>
+						<td>0</td>
+						<td>1</td>
+						<td>7</td>
+						<td>-0.41</td>
+					</tr>
+									<tr>
+						<td>
+															<a href="/topic/windies-cricket-team" target="_blank">Windies</a>
+													</td>
+						<td>9</td>
+						<td>2</td>
+						<td>6</td>
+						<td>0</td>
+						<td>1</td>
+						<td>5</td>
+						<td>-0.225</td>
+					</tr>
+									<tr>
+						<td>
+															<a href="/topic/afghanistan-cricket-team" target="_blank">Afghanistan</a>
+													</td>
+						<td>9</td>
+						<td>0</td>
+						<td>9</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>-1.322</td>
+					</tr>									<tr>
+						<td>
+															<a href="/topic/india-cricket-team" target="_blank">India</a>
+													</td>
+						<td>9</td>
+						<td>7</td>
+						<td>1</td>
+						<td>0</td>
+						<td>1</td>
+						<td>15</td>
+						<td>0.809</td>
+					</tr>
+									<tr>
+						<td>
+															<a href="/topic/australia-cricket-team" target="_blank">Australia</a>
+													</td>
+						<td>9</td>
+						<td>7</td>
+						<td>2</td>
+						<td>0</td>
+						<td>0</td>
+						<td>14</td>
+						<td>0.868</td>
+					</tr>
+									<tr>
+						<td>
+															<a href="/topic/england-cricket-team" target="_blank">England</a>
+													</td>
+						<td>9</td>
+						<td>6</td>
+						<td>3</td>
+						<td>0</td>
+						<td>0</td>
+						<td>12</td>
+						<td>1.152</td>
+					</tr>
+									<tr>
+						<td>
+															<a href="/topic/new-zealand-cricket-team" target="_blank">New Zealand</a>
+													</td>
+						<td>9</td>
+						<td>5</td>
+						<td>3</td>
+						<td>0</td>
+						<td>1</td>
+						<td>11</td>
+						<td>0.175</td>
+					</tr>
+									<tr>
+						<td>
+															<a href="/topic/pakistan-cricket-team" target="_blank">Pakistan</a>
+													</td>
+						<td>9</td>
+						<td>5</td>
+						<td>3</td>
+						<td>0</td>
+						<td>1</td>
+						<td>11</td>
+						<td>-0.43</td>
+					</tr>
+									<tr>
+						<td>
+															<a href="/topic/sri-lanka-cricket-team" target="_blank">Sri Lanka</a>
+													</td>
+						<td>9</td>
+						<td>3</td>
+						<td>4</td>
+						<td>0</td>
+						<td>2</td>
+						<td>8</td>
+						<td>-0.919</td>
+					</tr>
+									<tr>
+						<td>
+															<a href="/topic/south-africa-cricket-team" target="_blank">South Africa</a>
+													</td>
+						<td>9</td>
+						<td>3</td>
+						<td>5</td>
+						<td>0</td>
+						<td>1</td>
+						<td>7</td>
+						<td>-0.03</td>
+					</tr>
+									<tr>
+						<td>
+															<a href="/topic/bangladesh-cricket-team" target="_blank">Bangladesh</a>
+													</td>
+						<td>9</td>
+						<td>3</td>
+						<td>5</td>
+						<td>0</td>
+						<td>1</td>
+						<td>7</td>
+						<td>-0.41</td>
+					</tr>
+									<tr>
+						<td>
+															<a href="/topic/windies-cricket-team" target="_blank">Windies</a>
+													</td>
+						<td>9</td>
+						<td>2</td>
+						<td>6</td>
+						<td>0</td>
+						<td>1</td>
+						<td>5</td>
+						<td>-0.225</td>
+					</tr>
+									<tr>
+						<td>
+															<a href="/topic/afghanistan-cricket-team" target="_blank">Afghanistan</a>
+													</td>
+						<td>9</td>
+						<td>0</td>
+						<td>9</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>-1.322</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                                                        <a href="/topic/india-cricket-team" target="_blank">India</a>
+                                                                                </td>
+                                                    <td>9</td>
+                                                    <td>7</td>
+                                                    <td>1</td>
+                                                    <td>0</td>
+                                                    <td>1</td>
+                                                    <td>15</td>
+                                                    <td>0.809</td>
+                                                </tr>
+                                                                <tr>
+                                                    <td>
+                                                                                        <a href="/topic/australia-cricket-team" target="_blank">Australia</a>
+                                                                                </td>
+                                                    <td>9</td>
+                                                    <td>7</td>
+                                                    <td>2</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>14</td>
+                                                    <td>0.868</td>
+                                                </tr>
+                                                                <tr>
+                                                    <td>
+                                                                                        <a href="/topic/england-cricket-team" target="_blank">England</a>
+                                                                                </td>
+                                                    <td>9</td>
+                                                    <td>6</td>
+                                                    <td>3</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>12</td>
+                                                    <td>1.152</td>
+                                                </tr>
+                                                                <tr>
+                                                    <td>
+                                                                                        <a href="/topic/new-zealand-cricket-team" target="_blank">New Zealand</a>
+                                                                                </td>
+                                                    <td>9</td>
+                                                    <td>5</td>
+                                                    <td>3</td>
+                                                    <td>0</td>
+                                                    <td>1</td>
+                                                    <td>11</td>
+                                                    <td>0.175</td>
+                                                </tr>
+                                                                <tr>
+                                                    <td>
+                                                                                        <a href="/topic/pakistan-cricket-team" target="_blank">Pakistan</a>
+                                                                                </td>
+                                                    <td>9</td>
+                                                    <td>5</td>
+                                                    <td>3</td>
+                                                    <td>0</td>
+                                                    <td>1</td>
+                                                    <td>11</td>
+                                                    <td>-0.43</td>
+                                                </tr>
+                                                                <tr>
+                                                    <td>
+                                                                                        <a href="/topic/sri-lanka-cricket-team" target="_blank">Sri Lanka</a>
+                                                                                </td>
+                                                    <td>9</td>
+                                                    <td>3</td>
+                                                    <td>4</td>
+                                                    <td>0</td>
+                                                    <td>2</td>
+                                                    <td>8</td>
+                                                    <td>-0.919</td>
+                                                </tr>
+                                                                <tr>
+                                                    <td>
+                                                                                        <a href="/topic/south-africa-cricket-team" target="_blank">South Africa</a>
+                                                                                </td>
+                                                    <td>9</td>
+                                                    <td>3</td>
+                                                    <td>5</td>
+                                                    <td>0</td>
+                                                    <td>1</td>
+                                                    <td>7</td>
+                                                    <td>-0.03</td>
+                                                </tr>
+                                                                <tr>
+                                                    <td>
+                                                                                        <a href="/topic/bangladesh-cricket-team" target="_blank">Bangladesh</a>
+                                                                                </td>
+                                                    <td>9</td>
+                                                    <td>3</td>
+                                                    <td>5</td>
+                                                    <td>0</td>
+                                                    <td>1</td>
+                                                    <td>7</td>
+                                                    <td>-0.41</td>
+                                                </tr>
+                                                                <tr>
+                                                    <td>
+                                                                                        <a href="/topic/windies-cricket-team" target="_blank">Windies</a>
+                                                                                </td>
+                                                    <td>9</td>
+                                                    <td>2</td>
+                                                    <td>6</td>
+                                                    <td>0</td>
+                                                    <td>1</td>
+                                                    <td>5</td>
+                                                    <td>-0.225</td>
+                                                </tr>
+                                                                <tr>
+                                                    <td>
+                                                                                        <a href="/topic/afghanistan-cricket-team" target="_blank">Afghanistan</a>
+                                                                                </td>
+                                                    <td>9</td>
+                                                    <td>0</td>
+                                                    <td>9</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td>-1.322</td>
+                                                                            </tr>
+							</tbody>
+		</table>
+    </body>
+
+</html>
